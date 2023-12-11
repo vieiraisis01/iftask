@@ -59,9 +59,9 @@ let VisualTarefas = ({ route, navigation }) => {
         </View>
 
         {/* Mapeia as tarefas e exibe na lista */}
-        {obterTarefas.filter((tarefa) =>
-            tarefa.descricao.toLowerCase().includes(obterPesquisa.toLowerCase()) ||
-            tarefa.nome.toLowerCase().includes(obterPesquisa.toLowerCase())
+        {obterTarefas.filter((retTarefa) =>
+            retTarefa.descricao.toLowerCase().includes(obterPesquisa.toLowerCase()) ||
+            retTarefa.nome.toLowerCase().includes(obterPesquisa.toLowerCase())
           )
           .map((tarefa, index) => (
             <View
