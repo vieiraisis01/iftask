@@ -85,9 +85,9 @@ let VisualTarefas = ({ route, navigation }) => {
                     style={[
                     styles.descricao,
                     {
-                        textDecorationLine: tarefa.concluido
-                        ? 'line-through'
-                        : 'none',
+                        textDecorationLine: tarefa.concluido == true
+                            ? 'line-through'
+                            : 'none',
                     },
                     ]}>
                     {tarefa?.data + ' - ' + tarefa?.hora + ' \n ' + tarefa.nome + ': \n ' + tarefa.descricao}
